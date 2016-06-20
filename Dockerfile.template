@@ -1,0 +1,3 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-alpine:latest
+COPY start.sh /start.sh
+CMD ["sh", "/start.sh"]
