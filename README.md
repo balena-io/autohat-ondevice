@@ -1,2 +1,1 @@
-## Simple Barebones Alpine Image
-
+## AutoHaT Helper Image

@@ -1,3 +1,8 @@
 FROM resin/%%RESIN_ARCH%%-alpine:latest
+RUN apk update && apk add bash py-pip && \
+  rm -rf /var/cache/apk/* && \
+  pip install --upgrade pip && \
+  pip install flask
 COPY start.sh /start.sh
+COPY server.py /server.py
 CMD ["sh", "/start.sh"]
