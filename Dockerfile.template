@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_ARCH%%-alpine:latest
+FROM resin/%%RESIN_MACHINE_NAME%%-alpine:latest
 RUN apk update && apk add bash py-pip && \
   rm -rf /var/cache/apk/* && \
   pip install --upgrade pip && \
