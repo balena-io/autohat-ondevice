@@ -1,6 +1,10 @@
-#!/bin/sh
-echo "Hello World!"
+#!/bin/bash
 python server.py &
+for ((i=1;i<=5;i++));
+do
+    echo "Hello World!"
+    sleep 1s
+done
 while true
 do
     echo "Running..."
