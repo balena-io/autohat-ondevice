@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 1s
 python server.py &
 for ((i=1;i<=5;i++));
 do
