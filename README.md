@@ -1,1 +1,1 @@
-## AutoHaT Helper Image
+a## AutoHaT Helper Image
