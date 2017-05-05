@@ -5,4 +5,6 @@ RUN apk update && apk add bash py-pip lockfile-progs && \
   pip install flask
 WORKDIR /usr/src/app
 COPY . ./
+
+RUN sleep 50
 CMD ["bash", "start.sh"]
