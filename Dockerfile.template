@@ -1,10 +1,11 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-alpine:latest
-RUN apk update && apk add bash py-pip lockfile-progs && \
-  rm -rf /var/cache/apk/* && \
-  pip install --upgrade 'pip<20' && \
-  pip install flask
+FROM balenalib/%%RESIN_MACHINE_NAME%%-alpine:latest
+
+RUN apk update && apk add bash py-pip lockfile-progs --no-cache && \
+    pip install --upgrade pip && \
+    pip install flask
+
 WORKDIR /usr/src/app
+
 COPY . ./
 
-RUN sleep 50
 CMD ["bash", "start.sh"]
