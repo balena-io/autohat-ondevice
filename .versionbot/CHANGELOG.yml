@@ -1,0 +1,21 @@
+- commits:
+    - subject: update image and flowzone
+      hash: 295faaac0256a5ab721391ef2182adb97abc5d8b
+      body: ""
+      footer:
+        change-type: patch
+      author: ab77
+      nested: []
+    - subject: pin pip version of <20.0 which requires python >2.7
+      hash: 442038149e2c0ae3fb95ba7e755fddbf858e340f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Will Boyce <will@balena.io>
+        signed-off-by: Will Boyce <will@balena.io>
+      author: Will Boyce
+      nested: []
+  version: 0.0.2
+  title: ""
+  date: 2023-05-23T23:10:04.496Z
