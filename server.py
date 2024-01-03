@@ -3,6 +3,10 @@ import subprocess
 
 app = Flask(__name__)
 
+@app.route('/')
+def hello():
+    return 'Hello World!'
+
 @app.route('/modprobe/<module>')
 def modprobe(module):
     subprocess.call(['modprobe',module])
