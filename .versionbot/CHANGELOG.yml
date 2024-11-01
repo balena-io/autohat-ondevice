@@ -1,4 +1,27 @@
 - commits:
+    - subject: Use python3 venv which is recommended for adhering with PEP 668.
+      hash: 045c6112c1445bd4ecf24b88687f20227d32a14b
+      body: >
+        Starting alpine:3.19 with py3-pip v23.3.1-r0, py3-pip installations
+        using
+
+        apk will cause the error `error: externally-managed-environment` when
+        pip
+
+        attempts to upgrade the pip installation.  We now use a virtual env for
+
+        the test app to avoid this issue.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+        signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+      author: Carlo Miguel F. Cruz
+      nested: []
+  version: 0.0.5
+  title: ""
+  date: 2024-11-01T07:40:24.530Z
+- commits:
     - subject: add default rote
       hash: 78156e42def9b077f43b881a3839464f4fca225e
       body: ""
