@@ -1,12 +1,14 @@
-FROM balenalib/%%RESIN_MACHINE_NAME%%-alpine:latest
+# hadolint ignore=DL3007
+FROM alpine:latest
 
 WORKDIR /usr/src/app
 
+# hadolint ignore=DL3013,DL3018,SC1091
 RUN apk update && apk add bash python3 lockfile-progs --no-cache && \
     python3 -m venv venv && \
     source venv/bin/activate && \
-    pip install --upgrade pip && \
-    pip install flask
+    pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir flask
 
 COPY . ./
 
