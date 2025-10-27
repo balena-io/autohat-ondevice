@@ -1,4 +1,18 @@
 - commits:
+    - subject: Replace balenalib base image with alpine
+      hash: 32e7f7afafbb9f507a7dcd71540185f806ffa2e2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.0.6
+  title: ""
+  date: 2025-10-27T17:15:32.692Z
+- commits:
     - subject: Use python3 venv which is recommended for adhering with PEP 668.
       hash: 045c6112c1445bd4ecf24b88687f20227d32a14b
       body: >
