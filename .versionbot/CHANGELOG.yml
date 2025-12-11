@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: Help e2e tests find what they are looking for"
+      hash: a45c25462fa854a643436e9129f06d30546a9102
+      body: ""
+      footer: {}
+      author: Anton Belodedenko
+      nested: []
+  version: 0.0.7
+  title: ""
+  date: 2025-12-11T21:37:29.503Z
+- commits:
     - subject: Replace balenalib base image with alpine
       hash: 32e7f7afafbb9f507a7dcd71540185f806ffa2e2
       body: ""
