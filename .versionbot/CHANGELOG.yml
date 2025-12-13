@@ -1,4 +1,21 @@
 - commits:
+    - subject: "start.sh: Print the target message forever"
+      hash: a7babb4abc0193e20c0f0989782fa31084868824
+      body: |
+        The log streaming does not guarantee a start time, so to avoid
+        missing early container logs during other checks we need
+        to log the target message forever.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.0.8
+  title: ""
+  date: 2025-12-13T13:51:31.090Z
+- commits:
     - subject: "patch: Help e2e tests find what they are looking for"
       hash: a45c25462fa854a643436e9129f06d30546a9102
       body: ""
